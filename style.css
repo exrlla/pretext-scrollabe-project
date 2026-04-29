@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #f0ece4;
+    font-family: Georgia, serif;
+  }
+  
+  #container {
+    width: 720px;
+    margin: 0 auto;
+    padding: 5;
+  }
+  
+  canvas {
+    display: block;
+    width: 720px;
+  }
+  
+  /* Images are fixed to the viewport — they don't scroll with the page */
+  .fixed-image {
+    position: fixed;
+    z-index: 10;
+    border-radius: 6px;
+    pointer-events: none;
+  }
+  
+  /* First image: right side */
+  #img1 {
+    top: 120px;
+    right: calc(50% - 340px);
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Second image: left side, further down */
+  #img2 {
+    top: 420px;
+    left: calc(50% - 340px);
+    width: 220px;
+    height: 180px;
+    object-fit: cover;
+  }
+  

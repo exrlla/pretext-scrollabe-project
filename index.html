@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pretext Scroll Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Fixed images that stay in the viewport as you scroll -->
+    <img
+      id="img1"
+      class="fixed-image"
+      src="https://picsum.photos/id/1015/260/200"
+      alt="Mountain landscape"
+    />
+    <img
+      id="img2"
+      class="fixed-image left"
+      src="https://picsum.photos/id/1025/220/180"
+      alt="Dog portrait"
+    />
+
+    <div id="container">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
